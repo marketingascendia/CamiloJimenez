@@ -21,7 +21,6 @@ st.set_page_config(
 # --- Custom CSS -----------------------------------------------------------
 st.markdown("""
 <style>
-st.markdown("""<style>
 /* --- OCULTAR ELEMENTOS DE STREAMLIT (VERSIÓN BLINDADA) --- */
 #MainMenu {visibility: hidden !important; display: none !important;}
 footer {visibility: hidden !important; display: none !important;}
