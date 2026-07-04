@@ -7,8 +7,8 @@ from plotly.subplots import make_subplots
 import sys, os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from core.screener import fetch_ticker_info, passes_filters
-from core.dcf import fetch_financials, build_historical_table, calc_wacc, project_fcf, terminal_value, intrinsic_price, RISK_FREE_RATE, RISK_FREE_SOURCE
+from screener import fetch_ticker_info, passes_filters
+from dcf import fetch_financials, build_historical_table, calc_wacc, project_fcf, terminal_value, intrinsic_price, RISK_FREE_RATE, RISK_FREE_SOURCE
 
 # ─── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
