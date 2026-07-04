@@ -1,0 +1,52 @@
+1. Instala Python (si no lo tienes)
+Ve a https://python.org/downloads y descarga la versión más reciente (3.12 o superior).
+Durante la instalación, activa esta casilla que aparece al inicio:
+
+Add Python to PATH
+
+Si no la activas, nada va a funcionar. Una vez instalado, cierra y vuelve a abrir cualquier ventana de terminal.
+
+2. Verifica que Python quedó bien instalado
+Abre una terminal:
+
+Windows: presiona Win + R, escribe cmd, Enter
+
+Mac: presiona Cmd + Espacio, escribe Terminal, Enter
+
+Escribe esto y presiona Enter:
+python --version
+
+Debes ver algo como Python 3.12.x. Si ves un error, repite la instalación activando la casilla de PATH.
+
+3. Descarga la carpeta app
+
+4. Abre la terminal EN esa carpeta
+Windows:
+
+Entra a la carpeta app en el Explorador de archivos
+Haz clic en la barra de direcciones (donde dice la ruta)
+Escribe cmd y presiona Enter — se abre la terminal ya dentro de la carpeta
+
+Mac:
+
+Abre la Terminal
+Escribe cd  (con espacio al final), luego arrastra la carpeta app directo a la terminal
+Presiona Enter
+
+Para verificar que estás en el lugar correcto, escribe dir (Windows) o ls (Mac) y debes ver estos archivos: app.py, requirements.txt, y la carpeta core.
+
+5. Instala las dependencias
+Copia y pega este comando exacto en la terminal:
+pip install -r requirements.txt
+
+Esto va a instalar Streamlit, yfinance, Plotly y todo lo necesario. Tarda entre 1 y 3 minutos dependiendo de tu internet. Verás texto corriendo — es normal, espera a que termine y vuelva el cursor.
+
+6. Corre la app:
+Escribe en la terminal:
+streamlit run app.py
+
+La terminal va a mostrar algo como:
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.x.x:8501
+
+Y se abre automáticamente en tu navegador. Si no se abre solo, copia http://localhost:8501 y pégalo en Chrome, Firefox o Edge.
