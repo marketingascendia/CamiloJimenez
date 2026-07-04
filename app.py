@@ -21,11 +21,15 @@ st.set_page_config(
 # --- Custom CSS -----------------------------------------------------------
 st.markdown("""
 <style>
-/* --- Ocultar marca de agua, menú y pie de página de Streamlit --- */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-.viewerBadge_container__1QSob {display: none;}
+/* --- OCULTAR ELEMENTOS DE STREAMLIT (VERSIÓN BLINDADA) --- */
+#MainMenu {visibility: hidden !important;}
+footer {display: none !important;}
+header {display: none !important;}
+[data-testid="stFooter"] {display: none !important;}
+[data-testid="stHeader"] {display: none !important;}
+[data-testid="stToolbar"] {display: none !important;}
+[data-testid="stDecoration"] {display: none !important;}
+.viewerBadge_container__1QSob {display: none !important;}
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
